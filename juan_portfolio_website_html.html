@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juan Monserrate Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0a0a0a;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(to bottom right, #111, #1b1b1b);
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      margin-bottom: 10px;
+      color: #00bfff;
+    }
+
+    header h2 {
+      font-size: 1.5rem;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .quote {
+      max-width: 700px;
+      font-size: 1.2rem;
+      color: #8fd3ff;
+      margin-top: 20px;
+      font-style: italic;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #111;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      z-index: 1000;
+      border-bottom: 1px solid #222;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00bfff;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 25px;
+      color: #00bfff;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #151515;
+      padding: 25px;
+      border-radius: 15px;
+      border: 1px solid #222;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #00bfff;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #8fd3ff;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #111;
+      color: #888;
+    }
+
+    .highlight {
+      color: #00bfff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Juan Monserrate</h1>
+    <h2>Robotics • AI • Physics • Leadership • Volleyball</h2>
+
+    <p class="quote">
+      “Pain goes away, but what you learn stays with you. Keep going if you want to be the best.”
+    </p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#sports">Sports</a>
+    <a href="#goals">Goals</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a student from Cali, Colombia passionate about robotics, artificial intelligence,
+      physics, engineering, leadership, and sports. I enjoy building projects, competing
+      internationally, and constantly learning advanced concepts independently.
+    </p>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+
+    <div class="card-container">
+      <div class="card">
+        <h3>Brilliant Blue Challenge</h3>
+        <p>Winner of the Brilliant Blue Challenge <span class="highlight">2 times</span>.</p>
+      </div>
+
+      <div class="card">
+        <h3>VEX Robotics</h3>
+        <ul>
+          <li>2nd Best at Nationals</li>
+          <li>4th in South America</li>
+          <li>4th in New Zealand</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>CS50</h3>
+        <p>Completed Harvard CS50 with paid certificate.</p>
+      </div>
+
+      <div class="card">
+        <h3>Academics</h3>
+        <p>2nd best in class during 7th grade.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="leadership">
+    <h2>Leadership & Activities</h2>
+
+    <div class="card-container">
+      <div class="card">
+        <h3>Class President</h3>
+        <p>Current class president and team leader in multiple activities.</p>
+      </div>
+
+      <div class="card">
+        <h3>MUN Debate</h3>
+        <p>Participating in Model United Nations debate conferences.</p>
+      </div>
+
+      <div class="card">
+        <h3>Technical Drawing Tutor</h3>
+        <p>Tutor for technical drawing at school.</p>
+      </div>
+
+      <div class="card">
+        <h3>Physics Interest</h3>
+        <p>Studying quantum mechanics and advanced physics concepts independently.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sports">
+    <h2>Volleyball</h2>
+
+    <div class="card-container">
+      <div class="card">
+        <h3>Sub-15 MVP</h3>
+        <p>Awarded MVP at the Sub-15 level.</p>
+      </div>
+
+      <div class="card">
+        <h3>Competitive Play</h3>
+        <p>Competes up to Sub-17 level as libero.</p>
+      </div>
+
+      <div class="card">
+        <h3>Assistant Manager</h3>
+        <p>Assistant manager for the school women's junior volleyball team.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="goals">
+    <h2>Future Goals</h2>
+
+    <ul>
+      <li>Study AI, robotics, physics, or engineering.</li>
+      <li>Build advanced robotics and AI projects.</li>
+      <li>Create technology that solves real-world problems.</li>
+      <li>Study internationally and collaborate with universities.</li>
+      <li>Continue growing as both a leader and engineer.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Juan Monserrate Portfolio • Future Engineer & Innovator</p>
+  </footer>
+
+</body>
+</html>
